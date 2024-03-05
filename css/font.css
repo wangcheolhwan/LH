@@ -1,0 +1,40 @@
+/* 나눔스퀘어네오 */
+@font-face {
+	font-family:'nsn';
+	font-style:normal;
+	src:url(../fonts/NanumSquareNeo-cBd.ttf) format('truetype');;
+}
+
+@font-face {
+	font-family:'nsnB';
+	font-style:normal;
+	src:url(../fonts/NanumSquareNeo-dEb.ttf) format('truetype');;
+}
+
+
+/* 프리텐다드 */
+@font-face {
+	font-family:'preR';
+	font-style:normal;
+	src:url(../fonts/Pretendard-Regular.woff2) format('woff');;
+}
+@font-face {
+	font-family:'preM';
+	font-style:normal;
+	src:url(../fonts/Pretendard-Medium.woff2) format('woff');;
+}
+@font-face {
+	font-family:'preSB';
+	font-style:normal;
+	src:url(../fonts/Pretendard-SemiBold.woff2) format('woff');;
+}
+@font-face {
+	font-family:'preB';
+	font-style:normal;
+	src:url(../fonts/Pretendard-Bold.woff2) format('woff');;
+}
+@font-face {
+	font-family:'preEB';
+	font-style:normal;
+	src:url(../fonts/Pretendard-ExtraBold.woff2) format('woff');;
+}
