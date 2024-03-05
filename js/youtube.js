@@ -8,34 +8,27 @@ var players = [];
 function onYouTubePlayerAPIReady() {
   players.push(new YT.Player('player_01', {
     videoId: '1mK1MOwWcM4',
-    events: {
-      onReady: function (event) {
-      }
-    }
   }));
 
   players.push(new YT.Player('player_02', {
     videoId: 'odxnQoQFNRc',
-    events: {
-      onReady: function (event) {
-      }
-    }
   }));
 
   players.push(new YT.Player('player_03', {
     videoId: 'w5TmD_nhCiY',
-    events: {
-      onReady: function (event) {
-      }
-    }
   }));
 }
 
+function handleStateChange(event, index) {
+  if (event.data === YT.PlayerState.PLAYING) {
+    players[index].stopVideo();
+  }
+}
+
 const stopBtnEls = document.querySelectorAll('#youtube .xi-close');
-console.log(stopBtnEls);
 
 stopBtnEls.forEach((stopBtnEl, index) => {
   stopBtnEl.addEventListener('click', () => {
-    players[index].stopVideo();
-  })
-})
+    handleStateChange({ data: players[index].getPlayerState() }, index);
+  });
+});
