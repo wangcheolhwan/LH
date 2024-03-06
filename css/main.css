@@ -781,6 +781,7 @@ header.bg_white_02 .box_open_nav {
 }
 
 #lnb .lnb_close {
+  z-index: 1;
   position: absolute;
   right: 1.5rem;
   top: 2.4rem;
