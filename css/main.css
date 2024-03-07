@@ -953,6 +953,9 @@ header.bg_white_02 .box_open_nav {
     font-size: 1.2rem;
     padding: 2rem;
   }
+  #lnb .mobile .list-title .item_title .item_main_menu.active .list_sub_menu li:hover {
+    text-decoration: underline;
+  }
   #lnb .mobile .list-title .item_title .item_main_menu.active .list_sub_menu li:not(:last-child) {
     margin-bottom: 1rem;
   }
